@@ -336,6 +336,7 @@ a.btn-page {
   gap: 0.6em;
   font-weight: bold;
   text-decoration: none;
+  width:140px;
 }
 
 a.btn-page .arrow-wrapper {
