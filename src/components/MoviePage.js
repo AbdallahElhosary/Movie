@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import {  useParams } from 'react-router-dom'
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 function MoviePage() {
-    const naviagte = useNavigate();
     const param = useParams();
     const [movie, setMovie] = useState([])
 
@@ -48,13 +47,13 @@ function MoviePage() {
             </div>
             <div className='row'>
                 <div className="col-12 d-flex justify-content-between my-2">
-                    <Link className='btn-page w-25' to={movie.homepage} >
+                    <Link className='btn-page' to={movie.homepage} >
                         Watch
                         <div className="arrow-wrapper">
                             <div className="arrow"></div>
                         </div>
                     </Link>
-                    <Link className='btn-page w-25' to="/" >
+                    <Link className='btn-page' to="/" >
                         Home
                         <div className="arrow-wrapper">
                             <div className="arrow"></div>

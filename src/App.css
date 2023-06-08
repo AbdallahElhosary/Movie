@@ -41,6 +41,7 @@ body {
 
 .card {
   position: relative;
+  overflow: hidden;
   transition: all 0.5s ease-in;
   cursor: pointer;
   height: 375px;
@@ -266,6 +267,7 @@ a.btn-page {
   gap: 0.6em;
   font-weight: bold;
   text-decoration: none;
+  width: 140px;
 }
 
 a.btn-page .arrow-wrapper {
