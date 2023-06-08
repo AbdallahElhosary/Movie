@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
   margin: 0;
   background-color: #0f0f0f;
@@ -29,7 +36,8 @@ body {
 }
 
 .search input:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 2px solid red;
 }
 
@@ -42,6 +50,11 @@ body {
 .card {
   position: relative;
   overflow: hidden;
+<<<<<<< HEAD
+=======
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+>>>>>>> 423ee2048e9c728165276af033e0b0ceb597c23b
   transition: all 0.5s ease-in;
   cursor: pointer;
   height: 375px;
@@ -62,6 +75,8 @@ body {
   width: 100%;
   opacity: 0.8;
   visibility: none;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   background-color: #393839;
 }
@@ -165,10 +180,14 @@ body {
   margin: auto;
 }
 .loader--dot {
-  animation-name: loader;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: loader;
+          animation-name: loader;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   height: 20px;
   width: 20px;
   border-radius: 100%;
@@ -178,27 +197,33 @@ body {
 }
 .loader--dot:first-child {
   background-color: #8cc759;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .loader--dot:nth-child(2) {
   background-color: #8c6daf;
-  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 .loader--dot:nth-child(3) {
   background-color: #ef5d74;
-  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 .loader--dot:nth-child(4) {
   background-color: #f9a74b;
-  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 .loader--dot:nth-child(5) {
   background-color: #60beeb;
-  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 .loader--dot:nth-child(6) {
   background-color: #fbef5a;
-  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 .loader--text {
   position: absolute;
@@ -211,25 +236,65 @@ body {
 .loader--text:after {
   content: "Loading";
   font-weight: bold;
-  animation-name: loading-text;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: loading-text;
+          animation-name: loading-text;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   color: white;
   font-size: 20px;
 }
 
-@keyframes loader {
+@-webkit-keyframes loader {
   15% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   45% {
-    transform: translateX(230px);
+    -webkit-transform: translateX(230px);
+            transform: translateX(230px);
   }
   65% {
-    transform: translateX(230px);
+    -webkit-transform: translateX(230px);
+            transform: translateX(230px);
   }
   95% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes loader {
+  15% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  45% {
+    -webkit-transform: translateX(230px);
+            transform: translateX(230px);
+  }
+  65% {
+    -webkit-transform: translateX(230px);
+            transform: translateX(230px);
+  }
+  95% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes loading-text {
+  0% {
+    content: "Loading";
+  }
+  25% {
+    content: "Loading.";
+  }
+  50% {
+    content: "Loading..";
+  }
+  75% {
+    content: "Loading...";
   }
 }
 @keyframes loading-text {
@@ -255,25 +320,42 @@ a.btn-page {
   --hover-color: #645bffbf;
   --arrow-width: 10px;
   --arrow-stroke: 2px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 0;
   border-radius: 20px;
   color: var(--secondary-color);
   padding: 1em 1.8em;
   background: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.2s background;
+  -o-transition: 0.2s background;
   transition: 0.2s background;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.6em;
   font-weight: bold;
   text-decoration: none;
+<<<<<<< HEAD
   width: 140px;
+=======
+  width:140px;
+>>>>>>> 423ee2048e9c728165276af033e0b0ceb597c23b
 }
 
 a.btn-page .arrow-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 a.btn-page .arrow {
@@ -282,21 +364,28 @@ a.btn-page .arrow {
   background: var(--primary-color);
   height: var(--arrow-stroke);
   position: relative;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 
 a.btn-page .arrow::before {
   content: "";
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   border: solid var(--secondary-color);
   border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
   display: inline-block;
   top: -3px;
   right: 3px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
   padding: 3px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 a.btn-page:hover {

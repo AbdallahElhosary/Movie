@@ -15,7 +15,11 @@ const NavBar = ({ search }) => {
               <img className="logo" src={logo} alt="dfs" />
             </a>
           </Col>
+<<<<<<< HEAD
           <Col xs="9" lg="11" className=" d-flex align-items-center">
+=======
+          <Col xs="8" lg="11" className=" d-flex align-items-center">
+>>>>>>> 423ee2048e9c728165276af033e0b0ceb597c23b
             <div className="search  w-100">
               <i className="fa fa-search"></i>
               <input onChange={(e) => onSearch(e.target.value)} type="text" className="form-control" placeholder="ابحث" />
