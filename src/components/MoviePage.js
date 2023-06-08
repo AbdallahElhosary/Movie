@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import {  useParams } from 'react-router-dom'
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 function MoviePage() {
-    const naviagte = useNavigate();
     const param = useParams();
     const [movie, setMovie] = useState([])
 
