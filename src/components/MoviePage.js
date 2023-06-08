@@ -20,20 +20,20 @@ function MoviePage() {
                 <div className='col-md-6 col-12 mb-3'>
                     <img src={`https://image.tmdb.org/t/p/w500/` + movie.poster_path} className="card__image w-100 mb-2" alt="Movie Item" />
                 </div>
-                <div className='col-md-6 col-12'>
-                    <div className='d-flex fs-4 align-items-center'>
+                <div className='col-md-6 col-12 d-flex flex-column justify-content-center'>
+                    <div className='d-flex fs-4 align-items-center my-2'>
                         <span>Name :</span>
                         <span className='text-info mx-1'> {movie.original_title}</span>
                     </div>
-                    <div className='d-flex fs-4 align-items-center'>
+                    <div className='d-flex fs-4 align-items-center my-2'>
                         <span>Release Date :</span>
                         <span className='text-info mx-1'> {movie.release_date}</span>
                     </div>
-                    <div className='d-flex fs-4 align-items-center'>
+                    <div className='d-flex fs-4 align-items-center my-2'>
                         <span>Vote Count :</span>
                         <span className='text-info mx-1'> {movie.vote_count}</span>
                     </div>
-                    <div className='d-flex fs-4 align-items-center'>
+                    <div className='d-flex fs-4 align-items-center my-2'>
                         <span>vote Average :</span>
                         <span className='text-info mx-1'> {movie.vote_average}</span>
                     </div>

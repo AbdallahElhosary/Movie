@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect, useState } from 'react'
 import NavBar from "./components/NavBar";
 import MoviesList from "./components/MoviesList";
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import {Routes, Route } from 'react-router-dom'
 import './App.css';
 import MoviePage from './components/MoviePage';
 

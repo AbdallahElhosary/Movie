@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import logo from '../images/logo.png'
-import { Link } from 'react-router-dom'
 const NavBar = ({ search }) => {
 
   const onSearch = (word) => {
@@ -16,7 +15,7 @@ const NavBar = ({ search }) => {
               <img className="logo" src={logo} alt="dfs" />
             </a>
           </Col>
-          <Col xs="10" lg="11" className=" d-flex align-items-center">
+          <Col xs="9" lg="11" className=" d-flex align-items-center">
             <div className="search  w-100">
               <i className="fa fa-search"></i>
               <input onChange={(e) => onSearch(e.target.value)} type="text" className="form-control" placeholder="ابحث" />
