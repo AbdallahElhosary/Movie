@@ -47,13 +47,13 @@ function MoviePage() {
             </div>
             <div className='row'>
                 <div className="col-12 d-flex justify-content-between my-2">
-                    <Link className='btn-page w-25' to={movie.homepage} >
+                    <Link className='btn-page' to={movie.homepage} >
                         Watch
                         <div className="arrow-wrapper">
                             <div className="arrow"></div>
                         </div>
                     </Link>
-                    <Link className='btn-page w-25' to="/" >
+                    <Link className='btn-page' to="/" >
                         Home
                         <div className="arrow-wrapper">
                             <div className="arrow"></div>
