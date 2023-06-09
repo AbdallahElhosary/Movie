@@ -7,6 +7,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   background-color: #0f0f0f;
 }
 
@@ -50,11 +51,10 @@ body {
 .card {
   position: relative;
   overflow: hidden;
-<<<<<<< HEAD
-=======
+
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
->>>>>>> 423ee2048e9c728165276af033e0b0ceb597c23b
+
   transition: all 0.5s ease-in;
   cursor: pointer;
   height: 375px;
@@ -339,11 +339,8 @@ a.btn-page {
   gap: 0.6em;
   font-weight: bold;
   text-decoration: none;
-<<<<<<< HEAD
   width: 140px;
-=======
-  width:140px;
->>>>>>> 423ee2048e9c728165276af033e0b0ceb597c23b
+
 }
 
 a.btn-page .arrow-wrapper {
