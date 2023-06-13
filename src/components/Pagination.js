@@ -1,8 +1,15 @@
 import ReactPaginate from 'react-paginate';
+import { useDispatch } from 'react-redux';
+import { getPaginateMovies } from '../redux/action/movieAction';
 
-function PaginationFun({paginateFun }) {
+function PaginationFun() {
+    
+    const dispatch = useDispatch();
+
+    // Functions to Change the Page Form Pagination
     const handlePageClick = (data) => {
-        paginateFun(data.selected + 1)
+      dispatch(getPaginateMovies(data.selected + 1))
+
     }
     const pageCount = 500;
     return (

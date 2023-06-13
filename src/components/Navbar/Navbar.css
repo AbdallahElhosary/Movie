@@ -1,0 +1,52 @@
+.nav-style {
+    height: 60px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid #444;
+    position: relative;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* /////// */
+
+.search{
+    position: relative;
+    border-radius: 25px;
+    color: black;
+    width: 100%;
+}
+
+.search .search-btn{
+    background-color: transparent;
+    border-radius: inherit;
+    border: none;
+    outline: none;
+    padding: 5px 0px 5px 25px;
+}
+.search .search-btn::placeholder{
+    color: black;
+}
+.search .search-btn:focus{
+    outline: none;
+}
+.search svg{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+

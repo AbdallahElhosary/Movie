@@ -1,0 +1,43 @@
+.card-link{
+    text-decoration: none;
+}
+.card-item .card__image{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: fill;
+    transition: 0.5s;
+}
+.card-item .card__image:hover{
+    transform: scale(1.1);
+}
+.overlay__text{
+    height: 100px;
+}
+.card-item .name{
+    color: white;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.overlay__text div svg{
+    margin-right: 5px;
+}
+.overlay__text div p{
+    margin-right: 14px;
+}
+.overlay__text div .rate{
+    position: relative;
+}
+.overlay__text div .rate::before{
+    content:"";
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background-color: #BEBEBA;
+    top: 50%;
+    right:-7px;
+    transform: translateY(-50%);
+}
+p{
+    margin-bottom: 0 !important;
+}
